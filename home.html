@@ -2,50 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kgothatso's portfolio</title>
+    <title>kgothatso Portfolio</title>
+    <link rel="stylesheet" href="structure.css">
 </head>
 <body>
-    <header>
-        <h1>
-            Welcome to Kgothatso's Portfolio
-        </h1>
-        
-    </header>
-    <nav>
-            <ul>
-                <li>
-                    <a href="#" >Home</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h1 class="logo">KGOTHATSO</h1>
+
+        <nav  >
+            <ul class="nav"  >
+                <li><a href="home.html" class="btn" class="active" >Home</a></li>
+                <li><a href="About.html" class="btn">About</a></li>
+                <li><a href="Services.html" class="btn">Services</a></li>
+                <li><a href="Skills.html" class="btn">Skills</a></li>
+                <li><a href="Contact.html" class="btn">Contact</a></li>
             </ul>
         </nav>
+    </aside>
 
-        <maim>
-                <section>
-                    <h2>About Me</h2>
-                    <p> I am a Computer Science student at Wits University ,with a strong passion for machine learning and artificial intelligence. Coming from a rural background, I’ve embraced the challenge of building my future in the city, driven by determination, resilience, and hard work. My goal is to harness technology not only to create opportunities for myself but also to inspire others from similar beginnings to believe in the power of persistence and innovation.I am a disciple of christ.
-                    </p>
-                </section>
-                <article>
-                    <h3>
-                        Latest Project
-                    </h3>
-                    <p>
-                        Project: City Noise Mapper
+    <!-- MAIN CONTENT -->
+    <main class="main">
 
-                        A mobile app that crowdsources audio clips from users and uses AI to classify sounds like traffic, nightlife, or construction. It visualizes noise levels on an interactive city map, helping residents find quieter routes, study spots, or rest times. Built with Python (Librosa + PyTorch), Google Maps API, and React Native, it turns the chaos of urban noise into actionable insights.
-                    </p>
-                </article>
-        </maim>
-        <footer>
-            © 2026 2840850 | Built with Semantic HTML
-        </footer>
+        <header class="hero">
+            <p>Hello, I’m <span class="highlight">Kgothatso Nkadimeng</span></p>
+            <h1><span class="role">Machine Learning & Software Developer</span></h1>
+        </header>
+
+        <section class="intro">
+            <p>
+                I am an aspiring web designer and mobile developer with a strong passion for computer science. My interests extend beyond building engaging digital experiences into the dynamic fields of artificial intelligence and machine learning. In my free time, I design and develop mobile applications, experimenting with innovative frameworks and integrating intelligent features that enhance usability. I am driven by curiosity and a desire to merge creativity with technical expertise, aiming to contribute to solutions that leverage computational power to solve real-world challenges and push the boundaries of digital innovation.
+
+            </p>
+            <button class="btn"  href="Contact.html">Contact Me</button>
+        </section>
+
+    </main>
+
+    <!-- IMAGE SECTION -->
+    <aside class="right">
+        <figure>
+            <img src="cover.jpeg" alt="Portrait of Kgothatso Nkadimeng" class="profile-image">
+        </figure>
+    </aside>
+
+</div>
+
+<footer>
+    <p>© 2026 Kgothatso Nkadimeng Portfolio</p>
+</footer>
 
 </body>
 </html>
