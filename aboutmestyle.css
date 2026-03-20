@@ -6,7 +6,8 @@
 }
 
 body {
-    background: #f5e6d3; /* soft cream */
+    background: url(bg.jpeg) no-repeat center center fixed;
+    background-size: cover; 
     color: #2b1d13; /* dark brown text */
     font-family: 'Courier New', Courier, monospace ;
 }
@@ -47,7 +48,7 @@ body {
     border: none;
     padding: 8px 15px;             /* smaller padding */
     border-radius: 20px;
-    color: white;                  /* match navbar */
+    color: #c89b3c;                  /* match navbar */
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;         /* remove underline */
@@ -57,7 +58,7 @@ body {
 .logo {
     font-size: 28px;
     margin-bottom: 40px;
-    color: #8d7555;
+    color: #c89b3c;
 }
 
 .nav {
