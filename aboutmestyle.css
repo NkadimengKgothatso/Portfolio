@@ -2,7 +2,7 @@
 .About * {
     margin: 0;
     padding: 0;
-  
+    
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -58,7 +58,7 @@
 text-align: center;
     margin-bottom: 40px;
     border-style: solid;
-  
+    
     width: 100%;
     
     border: 2px solid #e0c097;
@@ -98,6 +98,7 @@ text-align: center;
 
 
 .skills-container {
+    
   width: 400px;
   margin: 50px auto;
   background: #fff8f0;
@@ -114,25 +115,27 @@ text-align: center;
 }
 
 .skill {
+  display: flex;                /* horizontal layout for the whole skill */
+  align-items: left;          /* vertically center the bar and text */
+  justify-content: space-between; /* space between name+percentage and bar */
   margin-bottom: 20px;
 }
 
 .skill-title {
-  display: flex;
-  justify-content: space-between; /* name left, percentage right */
-  margin-bottom: 5px;
+  display: flex;                /* name + percentage side by side */
+  gap: 10px;                    /* small space between name and percentage */
   font-weight: bold;
   color: #2b1d13;
 }
 
 .skill-bar {
-  width: 100%;
+  flex: 1;                      /* bar takes remaining horizontal space */
   height: 20px;
   background: #e0c097;
   border-radius: 10px;
   overflow: hidden;
+  margin-left: 15px;            /* space between text and bar */
 }
-
 .skill-fill {
   height: 100%;
   width: 0;
@@ -150,3 +153,4 @@ text-align: center;
   from { width: 0; }
   to { width: var(--fill-width); }
 }
+
