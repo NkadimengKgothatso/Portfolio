@@ -1,136 +1,152 @@
-* {
+/* RESET */
+.About * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace ;
+  
+    font-family: 'Courier New', Courier, monospace;
 }
 
-body {
-    background: url(bg.jpeg) no-repeat center center fixed;
-    background-size: cover; 
-    color: #2b1d13; /* dark brown text */
-    font-family: 'Courier New', Courier, monospace ;
+/* BODY */
+.About {
+    background: #f5e6d3;
+    background-size: cover;
+    color: #2b1d13;
 }
 
-/* LAYOUT */
-.container {
-    display: flex;
-}
-
-/* order control */
-.main { order: 1; }
-
-.sidebar { order: 2; }
-
-.main {
+/* MAIN */
+.About .main {
     margin-top: 80px;
 }
 
-/* SIDEBAR */
-.sidebar {
-    position: fixed;   /* stick to screen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: #5c3d2e;
-    border-radius: 45% 55% 70% 30% / 40% 60% 30% 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    padding: 0 30px;
-    z-index: 1000;
-}
 
+/* BUTTONS */
 .btn {
-    background: none;              /* remove button background */
+    background: none;
     border: none;
-    padding: 8px 15px;             /* smaller padding */
+    padding: 8px 15px;
     border-radius: 20px;
-    color: #c89b3c;                  /* match navbar */
+    color: #c89b3c;
     cursor: pointer;
     font-weight: bold;
-    text-decoration: none;         /* remove underline */
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
+/* LOGO */
 .logo {
     font-size: 28px;
     margin-bottom: 40px;
     color: #c89b3c;
 }
 
-.nav {
-    display: flex;        /* makes items go in a row */
-    flex-direction: row;  /* horizontal */
-    gap: 20px;            /* space between buttons */
-    list-style: none;     /* remove bullets */
+/* NAV */
+ .nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.nav li.active,
 .nav li:hover {
-    color: #c89b3c; /* gold accent */
+    color: #c89b3c;
 }
 
-.edge {
-    padding: 15px;
-    border: 2px dashed #e0c097;
-    border-radius: 10px;
-    background-color: #fff8f0;
+/* SECTIONS */
+.box {
+text-align: center;
+    margin-bottom: 40px;
     border-style: solid;
+  
+    width: 100%;
     
+    border: 2px solid #e0c097;
+   
+    background-color: #fff8f0;
 }
 
-.edge:first-of-type {
-    grid-column: span 2;
-}
-body {
-    background-color: #f5e6d3; /* soft cream background */
-    color: #2b1d13; /* dark brown text */
-}
-.hero h1 {
+/* HERO */
+.About .hero h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
 }
-/* SKILLS SECTION */
-.skill {
-    margin-bottom: 15px;
-}
 
-.skill span {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-.main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px;
-    padding: 20px;
-} 
-.highlight {
-    color: #8b3e2f; /* warm reddish brown */
+/* TEXT */
+.About .highlight {
+    color: #8b3e2f;
     font-family: cursive;
 }
-/* Bar background */
-.bar {
+
+/* SKILLS DOTS */
+.About .bar {
     display: flex;
     gap: 6px;
 }
 
-.fill {
+.About .fill {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #181616;
 }
 
-.fill.active {
+.About .fill.active {
     background-color: #5c3d2e;
+}
+
+
+.skills-container {
+  width: 400px;
+  margin: 50px auto;
+  background: #fff8f0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Courier New', monospace;
+}
+
+.skills-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #5c3d2e;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between; /* name left, percentage right */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2b1d13;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 20px;
+  background: #e0c097;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f6b26b, #5c3d2e);
+  animation: fillSkill 1.5s forwards;
+  animation-delay: 0.2s;
+  /* Use CSS variable to set final width dynamically */
+  --fill-width: 0%;
+  
+}
+
+/* Animate filling according to --fill-width */
+@keyframes fillSkill {
+  from { width: 0; }
+  to { width: var(--fill-width); }
 }
