@@ -62,8 +62,10 @@ text-align: center;
     width: 100%;
     
     border: 2px solid #e0c097;
+    
+    border-color:  #181616;
    
-    background-color: #fff8f0;
+    background-color: none;
 }
 
 /* HERO */
