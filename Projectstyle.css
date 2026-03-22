@@ -1,0 +1,12 @@
+
+.cell{
+    text-align: center;
+    margin-bottom: 40px;
+    border-style: dashed;
+    width: 100%;
+    border: 2px solid #e0c097;
+    border-color:  #181616;
+
+   
+    background-color: #e7d4bc;
+}

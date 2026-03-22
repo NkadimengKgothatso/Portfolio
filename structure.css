@@ -8,8 +8,9 @@
 
 /* BODY */
 body {
-    background: url("bgr.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    /* background: url("bgr.jpeg") no-repeat center center fixed;
+    background-size: cover; */
+    background-color: #f5e6d3;
     color: #2b1d13;
 }
 
