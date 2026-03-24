@@ -2,6 +2,10 @@
     padding: 80px 20px;
     background: #fff8f0;
     text-align: center;
+     border-style: solid;
+     border-radius: 3%;
+    margin: 4%;
+    border-color: #2b1d13;
 }
 
 .contact-container {
@@ -35,20 +39,22 @@
     color: #2b1d13;
     text-decoration: none;
     font-weight: bold;
+    border-style: solid;
+    border-color: #2b1d13;
     transition: all 0.3s ease;
 }
 
 /* HOVER EFFECT */
 .contact-card:hover {
     background: #c89b3c;
-    color: white;
+    color: black;
     transform: translateY(-5px);
 }
 
 /* CV SPECIAL STYLE */
 .contact-card.cv {
-    background: #5c3d2e;
-    color: white;
+    background:  #f5e6d3;
+    color: black;
 }
 
 .contact-card.cv:hover {
