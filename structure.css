@@ -8,7 +8,8 @@
 
 /* BODY */
 body {
-    background-color: #f5e6d3;
+     background: url("bgr.jpeg") no-repeat center center fixed;
+    background-size: cover;
     color: #2b1d13;
     line-height: 1.6;
 }
@@ -99,7 +100,7 @@ body {
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: #5c3d2e;
+    background-color: #8a6212;
     display: flex;
     border-radius: 20%;
     justify-content: space-between;
@@ -193,8 +194,27 @@ body {
     align-items: center;
     justify-content: right;
     animation: slideIn 2s ease-out forwards;
- 
+    
+    /* Combine float + morphing */
+    animation: floatMorph 6s ease-in-out infinite;
+    transition: transform 0.8s ease, box-shadow 0.5s ease;   
     margin-right: 120px;
+}
+
+
+.right img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #5c3d2e;
+
+    margin: 30px;
+    position:inherit;
+   
+    right: 0;
+    animation: slideIn 2s ease-out forwards;
+    /* Combine float + morphing */
+    animation: floatMorph 6s ease-in-out infinite;
+    transition: transform 0.8s ease, box-shadow 0.5s ease;
 }
 
 /* Floating + Morphing Blob Animation */
@@ -206,20 +226,6 @@ body {
     100% { transform: translateY(0px) rotate(0deg); border-radius: 45% 55% 70% 30% / 40% 60% 30% 70%; }
 }
 
-.right img {
-    width: 300px;
-    height: auto;
-    border: 2px solid #5c3d2e;
-
-    margin: 30px;
-    position:inherit;
-   
-    right: 0;
-
-    /* Combine float + morphing */
-    animation: floatMorph 6s ease-in-out infinite;
-    transition: transform 0.8s ease, box-shadow 0.5s ease;
-}
 
 
 /* Hover effect for image */
