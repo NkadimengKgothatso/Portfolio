@@ -79,8 +79,8 @@ body {
 
 /* BUTTON */
 .btn {
-    background: #c89b3c;
-    border: none;
+    background: #5c3d2e;
+   
     padding: 12px 25px;
     border-radius: 30px;
     cursor: pointer;
@@ -100,7 +100,10 @@ body {
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: #8a6212;
+     border-style: solid;
+    border-color: #5c3d2e;
+    background: url("bgr.jpeg") no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     border-radius: 20%;
     justify-content: space-between;
@@ -112,7 +115,7 @@ body {
 /* LOGO */
 .logo {
     font-size: 20px;
-    color: #a57535;
+    color: #5c3d2e
 }
 
 /* NAV */
