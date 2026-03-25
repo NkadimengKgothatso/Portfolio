@@ -13,6 +13,14 @@ body {
     color: #2b1d13;
     line-height: 1.6;
 }
+/* Highlighted text styling */
+.highlight {
+    color: #8b3e2f;           /* warm reddish brown */
+    font-family: cursive;     /* matches your theme */
+    padding: 2px 6px;         /* space around text */
+    border-radius: 4px;       /* rounded corners */
+    transition: all 0.3s ease;
+}
 
 /* CONTAINER */
 .container {
