@@ -1,399 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>kgothatso Portfolio</title>
-    <link rel="stylesheet" href="structure.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="aboutmestyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kgothatso Nkadimeng — Software Engineering &amp; AI/ML · Wits Computer Science</title>
+  <meta name="description" content="Kgothatso Nkadimeng is a Computer Science student at the University of the Witwatersrand building full-stack applications and machine-learning features. Projects, skills, experience and contact details.">
+  <meta name="author" content="Kgothatso Nkadimeng">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Kgothatso Nkadimeng — Software Engineering & AI/ML">
+  <meta property="og:description" content="Computer Science student at Wits building full-stack applications and machine-learning features.">
+  <meta property="og:image" content="assets/img/og-portrait.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="profile:first_name" content="Kgothatso">
+  <meta property="profile:last_name" content="Nkadimeng">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="image" type="image/webp" imagesrcset="assets/img/kgothatso-cutout-520.webp 520w, assets/img/kgothatso-cutout-900.webp 900w" imagesizes="(max-width: 980px) 90vw, 460px" fetchpriority="high">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kgothatso Nkadimeng",
+    "jobTitle": "Computer Science Student",
+    "description": "Computer Science student focused on software engineering, full-stack development and machine learning.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Johannesburg", "addressCountry": "ZA" },
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of the Witwatersrand" },
+    "knowsAbout": ["Software Engineering", "Machine Learning", "Full-Stack Development", "Python", "JavaScript", "TypeScript", "Java", "C", "SQL"],
+    "sameAs": [
+      "https://github.com/NkadimengKgothatso",
+      "https://www.linkedin.com/in/kgothatso-nkadimeng-2b3568350/"
+    ]
+  }
+  </script>
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.4l8 5.1 8-5.1V7H4zm16 2.75-7.46 4.76a1 1 0 0 1-1.08 0L4 9.75V17h16V9.75z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M13.17 5.76 19.4 12l-6.23 6.24-1.42-1.42L15.57 13H4v-2h11.57l-3.82-3.82 1.42-1.42z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-8.29 8.3-1.42-1.42L17.59 5H14V3zM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></symbol>
+  </svg>
 
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="container">
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <h1 class="logo">KGOTHATSO</h1>
-
-      <nav>
-        <ul class="nav">
-            <li><a href="#home" class="btn active">Home</a></li>
-            <li><a href="#About" class="btn">About</a></li>
-            <li><a href="#Services" class="btn">Services</a></li>
-            <li><a href="#Projects" class="btn">projects</a></li>
-            <li><a href="#Contact" class="btn">Contact</a></li>
+  <header class="site-header">
+    <div class="nav-pill">
+      <a class="brand" href="#top" aria-label="Kgothatso Nkadimeng, back to top">
+        <span class="brand-mark" aria-hidden="true">KN</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-stroke i-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-stroke i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="cv.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li class="nav-cta"><a class="btn btn-accent btn-sm" href="#contact">Let's connect <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
 
-</div>
-    </nav>
-    </aside>
+  <main id="main">
+    <!-- ============================================================ HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="container hero-stage">
+        <p class="hero-display" aria-hidden="true">Kgothatso</p>
 
-<main>    
-    <section id="home" class="section">
-        <!-- MAIN CONTENT -->
-        <div class="hero-intro">
-            <!-- Text content -->
-            <div class="intro-text">
-                <p>Hello, I’m <span class="highlight">Kgothatso Nkadimeng</span></p>
-                <h1><span class="role">Machine Learning & Software Developer</span></h1>
-                <p>
-                    I am an aspiring web designer and mobile developer with a strong passion for computer science. My interests extend beyond building engaging digital experiences into the dynamic fields of artificial intelligence and machine learning. 
-                </p>
-                <a class="btn" href="cv.pdf" download>Download CV</a>
-            </div>
-
-            <!-- Image content -->
-             <div class="right">
-                <figure>
-                    <img src="cover.jpeg" alt="Portrait of Kgothatso Nkadimeng">
-                </figure>
-            </div>
+        <div class="hero-left">
+          <p class="hero-hello">Hello, I'm</p>
+          <h1 class="hero-name" id="hero-name">Kgothatso Nkadimeng</h1>
+          <p class="hero-tagline">I build full-stack software and put <em>machine learning</em> to work inside it.</p>
+          <p class="hero-role"><span>Computer Science</span><span>Wits University</span></p>
         </div>
+
+        <figure class="portrait">
+          <picture>
+            <source type="image/webp" srcset="assets/img/kgothatso-cutout-520.webp 520w, assets/img/kgothatso-cutout-900.webp 900w" sizes="(max-width: 980px) 90vw, 460px">
+            <img class="portrait-img" src="assets/img/kgothatso-cutout-520.png" width="520" height="425" alt="Kgothatso Nkadimeng" fetchpriority="high">
+          </picture>
+          <span class="float-chip chip-a" aria-hidden="true">Python</span>
+          <span class="float-chip chip-b" aria-hidden="true">Machine Learning</span>
+          <span class="float-chip chip-c" aria-hidden="true">PostgreSQL</span>
+          <span class="float-chip chip-d" aria-hidden="true">React</span>
+        </figure>
+
+        <div class="hero-right">
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Second vacation placement at CSIR</p>
+          <p class="hero-summary">
+            Third-year Computer Science student and CTO of a South African legal-tech startup. I've built a clinic queue
+            platform with a wait-time prediction API, a production compliance platform, and a playable 3D browser game,
+            and I ship team features through reviewed PRs and CI-gated tests.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore my projects <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-secondary" href="cv.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Resume</a>
+          </div>
+          <ul class="social" aria-label="Profiles">
+            <li><a href="https://github.com/NkadimengKgothatso" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/kgothatso-nkadimeng-2b3568350/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="mailto:Kgothatsonkadimeng15@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>C / C++</span><span>SQL</span><span>React</span><span>Node.js</span><span>Flask</span><span>PostgreSQL</span><span>Supabase</span><span>Firebase</span><span>scikit-learn</span><span>GitHub Actions</span>
+          <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>C / C++</span><span>SQL</span><span>React</span><span>Node.js</span><span>Flask</span><span>PostgreSQL</span><span>Supabase</span><span>Firebase</span><span>scikit-learn</span><span>GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="proof reveal" aria-label="Highlights">
+          <li><strong>ML in production</strong><span>Gradient-boosted wait-time model served through a Flask API to a live clinic app</span></li>
+          <li><strong>CTO of a live product</strong><span>Built and run a compliance platform: PostgreSQL with row-level security, OAuth, PWA</span></li>
+          <li><strong>Team delivery</strong><span>Scrum teams of 6 and 8: reviewed PRs, CI, coverage gates</span></li>
+          <li><strong>Validated at scale</strong><span>Git analytics engine verified against the 61k-commit git.git history</span></li>
+        </ul>
+      </div>
     </section>
 
+    <!-- =========================================================== ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title" id="about-title">Computer science, applied</h2>
+          <p>
+            I'm a Computer Science student at Wits who likes the point where theory turns into something people use.
+            My degree gives me the foundations: <strong>algorithms, operating systems, databases, software design and machine
+            learning</strong>. I test them by building.
+          </p>
+          <p>
+            That's meant training a regression model on clinic queue data and serving it behind an API so patients see a
+            realistic wait time. It's meant designing a relational schema with row-level security so one business can never read
+            another's documents. And on team projects it's meant writing the tests and documentation that let six or eight people
+            ship together without breaking each other's work.
+          </p>
+          <p>
+            I work in small, verifiable steps. I ship something that runs, measure it, then improve it. I document decisions so the next
+            person, or future me, understands why. I'm looking to grow as a <strong>software engineer</strong> with room to go
+            deeper into <strong>applied AI</strong>.
+          </p>
+        </div>
+        <aside class="reveal" aria-label="Summary">
+          <div class="panel">
+            <h3>Looking for</h3>
+            <ul class="tick-list">
+              <li>Software engineering internships &amp; vacation work</li>
+              <li>Graduate developer programmes</li>
+              <li>Junior software / full-stack developer roles</li>
+              <li>AI &amp; machine learning internships</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>At a glance</h3>
+            <dl class="facts">
+              <dt>Studying</dt><dd>BSc Computer Science, Wits (3rd year)</dd>
+              <dt>Based in</dt><dd>Johannesburg, South Africa</dd>
+              <dt>Now</dt><dd>Vacation Student, CSIR (2nd placement)</dd>
+              <dt>Languages</dt><dd>English, Sepedi (fluent); isiZulu, isiXhosa, Sesotho, Setswana (conversational)</dd>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-</div>
-</section>
+    <!-- ========================================================== SKILLS -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Technical skills</p>
+          <h2 class="section-title" id="skills-title">What I work with</h2>
+          <p class="section-lead">No percentage bars. Each group links to where I've actually used it.</p>
+        </div>
 
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>C</li><li>C++</li><li>SQL</li>
+            </ul>
+            <ul class="chips chips-quiet" style="margin-top:.5rem" aria-label="Also used">
+              <li>Dart</li><li>PHP</li><li>MATLAB</li><li>HTML/CSS</li>
+            </ul>
+            <p class="evidence">Used in: <a href="#p-carequeue">CareQueue</a> (Python, JS), <a href="#p-witsquest">Wits Quest</a> (TS), <a href="#education">OS labs</a> (C)</p>
+          </article>
 
+          <article class="skill-card reveal">
+            <h3>Backend &amp; APIs</h3>
+            <ul class="chips">
+              <li>Node.js</li><li>Express</li><li>Flask</li><li>REST API design</li><li>Next.js route handlers</li><li>Authentication &amp; OAuth</li>
+            </ul>
+            <p class="evidence">Used in: <a href="#p-carequeue">Flask /predict API</a>, <a href="#p-rat">RAT REST API</a>, <a href="#p-witsquest">Wits Quest auth</a></p>
+          </article>
 
+          <article class="skill-card reveal">
+            <h3>Databases &amp; Cloud</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li><li>Supabase</li><li>Row-Level Security</li><li>Firebase Auth</li><li>Firestore</li><li>SQLite</li><li>MySQL</li><li>Vercel</li><li>Render</li>
+            </ul>
+            <p class="evidence">Used in: <a href="#p-beko">Beko ComplianceOS</a> (Postgres + RLS), <a href="#p-carequeue">CareQueue</a> (Firestore)</p>
+          </article>
 
+          <article class="skill-card reveal">
+            <h3>Machine Learning &amp; Data</h3>
+            <ul class="chips">
+              <li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>Gradient Boosting</li><li>Random Forest</li><li>Naive Bayes</li><li>Feature engineering</li><li>Cross-validation</li><li>Jupyter</li>
+            </ul>
+            <p class="evidence">Used in: <a href="#p-carequeue">wait-time model</a>, <a href="#more-projects">Naive Bayes from scratch</a></p>
+          </article>
 
-<!-- ABOUT -->
-<section id="About" >
-   
-    
-     <div class="services-container">
-        <h2> 🧑‍💻 About Me</h2></div>
-     <!-- MAIN CONTENT -->
-    
+          <article class="skill-card reveal">
+            <h3>Frontend &amp; Mobile</h3>
+            <ul class="chips">
+              <li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Progressive Web Apps</li><li>Three.js</li><li>GLSL shaders</li><li>Flutter</li><li>Android (Java)</li>
+            </ul>
+            <p class="evidence">Used in: <a href="#p-beko">Beko</a> &amp; <a href="#p-carequeue">CareQueue</a> (PWAs), <a href="#p-silenthorn">The Silent Horn</a> (Three.js)</p>
+          </article>
 
-        
+          <article class="skill-card reveal">
+            <h3>Engineering practice</h3>
+            <ul class="chips">
+              <li>Git &amp; pull-request reviews</li><li>Jest</li><li>Vitest</li><li>GitHub Actions</li><li>Codecov</li><li>Scrum</li><li>UML / 4+1 views</li><li>Technical writing</li><li>Linux</li>
+            </ul>
+            <p class="evidence">Used in: <a href="#p-carequeue">CareQueue CI</a>, <a href="#p-witsquest">Wits Quest docs</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <section  class="contact" >
-              <p>Hello, I’m <span class="highlight">Kgothatso Nkadimeng</span></p>
-            <p >
-               I am a Computer Science student and aspiring software developer with a strong passion for artificial intelligence and engineering innovative solutions. My core skills include programming, algorithm design, data structures, and software development principles, complemented by a growing expertise in AI, machine learning, and system optimization.
-            </p>
-             
-    
-              <h3>Education<br></h3>
-            <p>
-               National Senior Certificate (Matric)<br>
+    <!-- ======================================================== PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Featured projects</p>
+          <h2 class="section-title" id="projects-title">Selected work</h2>
+          <p class="section-lead">Five projects that show how I build: what the problem was, what I did, and what was hard about it.</p>
+        </div>
 
-            Completed Matric in 2023.
-            Focused on Mathematics and Physical Sciences.<br>
-                Achieved a strong academic record with a passion for STEM subjects.<br>
-                Currently pursuing a Bachelor of Science in Computer Science at the University of the Witwatersrand (Wits University).<br>
-                
-            
-
-
-            <h3>Core Coursework & Skills<br></h3>
-            Programming (Java, Python), Data Structures & Algorithms, Object-Oriented Programming, App Development (Android), Databases & SQL, Software Engineering principles, Web Development (HTML, CSS, JavaScript), Git & GitHub, debugging and testing.<br>
-            <h3>Current Focus<br></h3>
-            Advanced Algorithms, Machine Learning, Artificial Intelligence, Advanced Software Development, systems design, collaborative and real-world project development.
-                        </p>
-         </section  >
-        
-         <section style="display: flex;">
-
-                
-                <section class="skills-container" class="parent">
-                    <h3>Personal Information</h3>
-                    <p>
-                    Degree : Bsc Computer Science<br>
-                        Location : Johannesburg , South Africa<br>
-                        Age : 20<br>
-                        Email :<a href="mailto:kgkgthathelegend@gmail.com" >kgkgthathelegend@gmail.com</a><br>
-                        Phone : +27 79 395 0364 
-                    </p>
-                </section>
-                    
-            
-        
-                
-        
-        <div class="skills-container" class="parent">
-        <h2>Skills</h2>
-
-        <div class="skill">
-            <div class="skill-title">
-            <span>HTML</span>
-            <span class="skill-percent">65%</span>
+        <div class="case-list">
+          <!-- CareQueue -->
+          <article class="case reveal" id="p-carequeue" aria-labelledby="carequeue-title">
+            <div class="case-aside">
+              <div class="case-meta">
+                <span class="tag tag-accent">Academic · Team of 8</span>
+                <span class="tag tag-live">Live</span>
+                <span class="tag">2026</span>
+              </div>
+              <h3 class="case-title" id="carequeue-title">CareQueue</h3>
+              <p class="case-tagline">Clinic appointment and virtual-queue platform with machine-learning wait-time prediction.</p>
+              <ul class="chips" aria-label="Technologies">
+                <li>JavaScript</li><li>Firebase Auth</li><li>Firestore</li><li>PWA</li><li>Python</li><li>Flask</li><li>scikit-learn</li><li>pandas</li><li>Jest</li><li>GitHub Actions</li><li>Codecov</li>
+              </ul>
+              <div class="case-links">
+                <a class="btn btn-primary btn-sm" href="https://care-queue-delta.vercel.app" target="_blank" rel="noopener">Live demo <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                <a class="btn btn-secondary btn-sm" href="https://github.com/NkadimengKgothatso/SD-CareQueue" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Source</a>
+              </div>
             </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 65%"></div>
+            <div class="case-main">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>Patients at South African public clinics often wait for hours with no idea of their queue position or how long they'll be waiting.</p>
+              </div>
+              <div class="case-block">
+                <h4>My contributions</h4>
+                <ul class="bullets">
+                  <li>Built the <strong>wait-time prediction pipeline end to end</strong>: Firestore export, cleaning and outlier removal, feature engineering, model training, and a <strong>Flask <code>/predict</code> API</strong> deployed on Render that the patient dashboard calls.</li>
+                  <li>Replaced the first <strong>Random Forest</strong> model with a <strong>Gradient Boosting Regressor</strong> on engineered features, evaluated with 5-fold cross-validation and mean absolute error.</li>
+                  <li>Built the <strong>patient dashboard</strong> (live queue position, status and estimated wait), with a rule-based fallback estimate when the prediction service can't be reached.</li>
+                  <li>Set up the <strong>GitHub Actions</strong> test workflow with <strong>Codecov</strong> coverage reporting, and wrote Scrum and architecture documentation (sprint backlogs, burndown charts, retrospectives, 4+1 views).</li>
+                </ul>
+              </div>
+              <details class="more">
+                <summary>Solution &amp; technical challenges <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <div class="more-body">
+                  <div class="case-block">
+                    <h4>Solution</h4>
+                    <p>A Progressive Web App with three roles. Patients book appointments, join virtual queues and track their position. Staff manage queues, walk-ins and availability. Admins manage clinics and staff and view analytics. Authentication uses Firebase Auth (including Google sign-in), and data lives in Firestore.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4>Challenges</h4>
+                    <ul class="bullets">
+                      <li><strong>Very little real history to learn from.</strong> I wrote scripts to log and backfill queue history (plus synthetic data) so the model had enough to train on.</li>
+                      <li><strong>Overfitting on a small dataset.</strong> The training script compares train and test MAE and warns when the gap gets too large.</li>
+                      <li><strong>An unreliable network dependency.</strong> The dashboard falls back to a formula-based estimate instead of showing nothing.</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
-        </div>
+          </article>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>CSS</span>
-            <span class="skill-percent">60%</span>
+          <!-- Beko -->
+          <article class="case reveal" id="p-beko" aria-labelledby="beko-title">
+            <div class="case-aside">
+              <div class="case-meta">
+                <span class="tag tag-accent">CTO · Private company</span>
+                <span class="tag tag-live">Live</span>
+                <span class="tag">2026</span>
+              </div>
+              <h3 class="case-title" id="beko-title">Beko ComplianceOS</h3>
+              <p class="case-tagline">Compliance platform that helps South African SMEs track their SARS, CIPC and other regulatory obligations.</p>
+              <ul class="chips" aria-label="Technologies">
+                <li>JavaScript (ES modules)</li><li>Supabase Auth</li><li>PostgreSQL</li><li>Row-Level Security</li><li>Supabase Storage</li><li>SQL</li><li>PWA</li><li>Vercel</li>
+              </ul>
+              <div class="case-links">
+                <a class="btn btn-primary btn-sm" href="https://www.bekocompliance.co.za" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+              </div>
+              <p class="case-note">Source code is private company IP. Happy to walk through the architecture in an interview.</p>
             </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 60%"></div>
+            <div class="case-main">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>Small businesses and sole proprietors often don't know which regulatory obligations apply to them or when they're due. The answer depends on their structure, size, VAT status, staff and industry.</p>
+              </div>
+              <div class="case-block">
+                <h4>My contributions</h4>
+                <ul class="bullets">
+                  <li>As <strong>CTO of a private company</strong> I lead all technology decisions, and I built the platform myself from first commit to production on a custom domain.</li>
+                  <li>Designed a <strong>PostgreSQL schema of 12 tables with row-level security</strong> policies, so each user can only ever read or write their own data and documents.</li>
+                  <li>Implemented <strong>authentication flows</strong>: email and password, 8-digit email verification codes, Google sign-in, password reset and route guards (verify, then onboard, then dashboard).</li>
+                  <li>Built a <strong>rules-based obligation engine</strong>. Onboarding answers generate a personalised set of obligations and a 0–100 compliance score, and obligations that don't apply are excluded from the score instead of counted as zero.</li>
+                </ul>
+              </div>
+              <details class="more">
+                <summary>Solution &amp; technical challenges <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <div class="more-body">
+                  <div class="case-block">
+                    <h4>Solution</h4>
+                    <p>An installable PWA with a multi-step onboarding wizard and a dashboard of deadlines and alerts. It also has a documents centre (validated per-user uploads), tender alerts, a FICA-style AML risk screener, consultation booking with partner law firms, and an admin panel.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4>Challenges</h4>
+                    <ul class="bullets">
+                      <li><strong>Changing the data model mid-project.</strong> I migrated the backend from Firebase/Firestore (documents) to Supabase/PostgreSQL (relational), using idempotent SQL migration scripts that can safely be re-run.</li>
+                      <li><strong>Keeping scoring explainable.</strong> Every obligation carries an explicit applicability rule, and the model is documented for review by legal professionals.</li>
+                      <li><strong>Security as a design constraint.</strong> Access control is enforced in the database (RLS), not just hidden in the UI.</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
-        </div>
+          </article>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>JavaScript</span>
-            <span class="skill-percent">52%</span>
+          <!-- Wits Quest -->
+          <article class="case reveal" id="p-witsquest" aria-labelledby="witsquest-title">
+            <div class="case-aside">
+              <div class="case-meta">
+                <span class="tag tag-accent">Academic · Team of 6</span>
+                <span class="tag tag-live">Live</span>
+                <span class="tag">2026</span>
+              </div>
+              <h3 class="case-title" id="witsquest-title">Wits Quest</h3>
+              <p class="case-tagline">Location-gated campus game: walk to real Wits landmarks, answer trivia, collect cards and battle other students.</p>
+              <ul class="chips" aria-label="Technologies">
+                <li>TypeScript</li><li>React</li><li>Vite</li><li>Node.js</li><li>Express</li><li>Supabase</li><li>PostgreSQL</li><li>Vitest</li><li>MkDocs</li>
+              </ul>
+              <div class="case-links">
+                <a class="btn btn-primary btn-sm" href="https://wits-quest.vercel.app" target="_blank" rel="noopener">Live app <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                <a class="btn btn-secondary btn-sm" href="https://nkadimengkgothatso.github.io/-wits-quest/" target="_blank" rel="noopener">Documentation <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+              </div>
+              <p class="case-note">Source code is hosted on the university's Gitea instance and isn't public. The docs site I maintain is <a href="https://github.com/NkadimengKgothatso/-wits-quest" target="_blank" rel="noopener">on GitHub</a>.</p>
             </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 52%"></div>
+            <div class="case-main">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>Static campus tours don't hold students' attention. A game that rewards physically visiting places has a core integrity problem: the location a phone reports can't be trusted.</p>
+              </div>
+              <div class="case-block">
+                <h4>My contributions</h4>
+                <ul class="bullets">
+                  <li>Built <strong>authentication</strong> in Sprint 1: login and registration UI, the React auth context, and server-side credential checks.</li>
+                  <li>Owned <strong>achievements</strong>: admin-defined rules (cards collected, battles won, streaks, trails completed) checked <strong>server-side</strong> after every answer and match, with an in-game unlock pop-up.</li>
+                  <li>Owned <strong>analytics and daily streaks</strong>, including per-question pass rates that power the curators' "needs repair" flag for questions almost everyone gets wrong.</li>
+                  <li><strong>Co-led documentation</strong> (15% of the milestone mark): API reference and endpoint catalogue, database, testing and methodology. I built and deployed the MkDocs site and kept the stand-up notes.</li>
+                </ul>
+              </div>
+              <details class="more">
+                <summary>Solution &amp; technical challenges <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <div class="more-body">
+                  <div class="case-block">
+                    <h4>Solution</h4>
+                    <p>A React + TypeScript frontend with an Express API on Supabase (PostgreSQL, Auth, Realtime). The server decides everything that matters: location check-ins, trivia marking, battle outcomes and rewards. Each of the six members owned one domain end to end.</p>
+                  </div>
+                  <div class="case-block">
+                    <h4>Challenges</h4>
+                    <ul class="bullets">
+                      <li><strong>Never trusting the client.</strong> Location and battle logic moved server-side, with anti-cheat checks for walking time and duplicate answers, plus trading rules that prevent card funnelling.</li>
+                      <li><strong>Six people, one codebase.</strong> We used a branch per task and reviewed PRs citing bug-tracker IDs. CI enforced lint, type checks and a test-coverage gate raised from 60% to 80%.</li>
+                      <li><strong>Cross-member dependencies.</strong> My per-question pass rates were a hand-off another member's curation feature depended on, so they had to land early and stay stable.</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
-        </div>
+          </article>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>Python</span>
-            <span class="skill-percent">80%</span>
+          <!-- The Silent Horn -->
+          <article class="case reveal" id="p-silenthorn" aria-labelledby="silenthorn-title">
+            <div class="case-aside">
+              <div class="case-meta">
+                <span class="tag tag-accent">Academic · Team</span>
+                <span class="tag tag-live">Playable</span>
+                <span class="tag">2026</span>
+              </div>
+              <h3 class="case-title" id="silenthorn-title">The Silent Horn</h3>
+              <p class="case-tagline">3D browser game in three acts (run, drive, fight) through a jungle to an ancient shrine, built with Three.js for Computer Graphics &amp; Visualisation.</p>
+              <ul class="chips" aria-label="Technologies">
+                <li>JavaScript</li><li>Three.js</li><li>GLSL shaders</li><li>WebGL</li><li>Vite</li><li>Web Audio</li>
+              </ul>
+              <div class="case-links">
+                <a class="btn btn-primary btn-sm" href="https://wmc.ms.wits.ac.za/students/sgroup3889/index.html" target="_blank" rel="noopener">Play the game <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                <a class="btn btn-secondary btn-sm" href="https://youtu.be/DdFIj7nvtBM" target="_blank" rel="noopener">Trailer <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                <a class="btn btn-secondary btn-sm" href="https://youtu.be/6JAD31ogV0k" target="_blank" rel="noopener">Devlog <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                <a class="btn btn-secondary btn-sm" href="https://github.com/motshekhene/cgv-project" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Source</a>
+              </div>
             </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 80%"></div>
+            <div class="case-main">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>Build a complete, playable 3D game that runs in the browser: real-time rendering, physics-like vehicle handling and enemy AI, smooth at interactive frame rates, with a team of developers working on separate levels of one codebase.</p>
+              </div>
+              <div class="case-block">
+                <h4>My contributions: Level 2, "The River Road"</h4>
+                <ul class="bullets">
+                  <li>Owned the <strong>driving level end to end</strong>: a car chase along a jungle river road that ends going over a waterfall.</li>
+                  <li>Built the <strong>vehicle controller</strong> (acceleration, steering, handbrake, solid collisions) and traffic of cars, vans, buses and wildlife crossing the road.</li>
+                  <li>Designed the pursuer's <strong>AI as a finite-state machine</strong> with telegraphed attack moves (slam, PIT, shunt, pin, brake-check, ram, tyre shots, spike strips and kamikaze drones), tuned so every hit can be dodged.</li>
+                  <li>Wrote a <strong>car-paint shader</strong> that hooks into Three.js materials with <code>onBeforeCompile</code>: it converts texels to HSV and repaints only the body, leaving glass, tyres, chrome and lights untouched.</li>
+                </ul>
+              </div>
+              <details class="more">
+                <summary>Technical details <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <div class="more-body">
+                  <div class="case-block">
+                    <ul class="bullets">
+                      <li><strong>Fair AI, not a cheating one.</strong> Each attack is telegraphed with headlight strobes and lane lunges, and the pursuer weaves through traffic using the same rules as the player instead of passing through it.</li>
+                      <li><strong>Atmosphere on a frame budget.</strong> Dusk lighting, a rain shower, working car lights and a river gorge before the falls, while keeping frame timing steady.</li>
+                      <li><strong>Sound without audio files.</strong> Engine and effects synthesised in the browser with the Web Audio API.</li>
+                      <li><strong>Player choice.</strong> A car picker with distinct car stats and paint options, built on the paint shader.</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
-        </div>
+          </article>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>C++</span>
-            <span class="skill-percent">60%</span>
+          <!-- RAT -->
+          <article class="case reveal" id="p-rat" aria-labelledby="rat-title">
+            <div class="case-aside">
+              <div class="case-meta">
+                <span class="tag tag-accent">Academic · Individual</span>
+                <span class="tag">2026</span>
+              </div>
+              <h3 class="case-title" id="rat-title">RAT: Repo Analysis Tool</h3>
+              <p class="case-tagline">Dashboard that measures how a Git repository evolved: churn, growth and code ownership per file, directory and author.</p>
+              <ul class="chips" aria-label="Technologies">
+                <li>Node.js</li><li>Express</li><li>JavaScript</li><li>ECharts</li><li>Git internals</li>
+              </ul>
+              <div class="case-links">
+                <a class="btn btn-secondary btn-sm" href="https://github.com/NkadimengKgothatso/Software-Design-Project-Test-" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Source</a>
+              </div>
             </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 60%"></div>
+            <div class="case-main">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>Questions like "who owns this code?" and "where does change concentrate?" need exact metrics computed across tens of thousands of commits, and the answers need to come back fast.</p>
+              </div>
+              <div class="case-block">
+                <h4>Implementation</h4>
+                <ul class="bullets">
+                  <li><strong>One streaming <code>git log --numstat</code> pass</strong> per repository (never a process per commit), parsing NUL-delimited output on the fly.</li>
+                  <li>In-memory model with sparse per-file arrays, directory totals aggregated at parse time, <strong>binary-search range queries</strong> and a small FIFO cache.</li>
+                  <li>REST API plus a dashboard with timelines, a treemap, hotspots, ownership charts, author merging (<code>.mailmap</code>) and zip-upload or URL-clone ingestion.</li>
+                </ul>
+              </div>
+              <details class="more">
+                <summary>Validation &amp; performance <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <div class="more-body">
+                  <div class="case-block">
+                    <ul class="bullets">
+                      <li><strong>Correctness:</strong> matched reference metric CSVs exactly for cJSON, redis and git.git (63,298 rows checked on git), plus 111 hand-computed fixture assertions.</li>
+                      <li><strong>Performance:</strong> parses php-src (118,756 commits) and then serves dashboard queries from memory in about 300 ms. Parse time is about 20% above git's own <code>git log</code>.</li>
+                      <li><strong>Edge cases:</strong> renames (<code>-M50%</code>), binary files and merge commits handled exactly as the specification defines.</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
+          </article>
         </div>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>SQL</span>
-            <span class="skill-percent">80%</span>
-            </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 80%"></div>
-            </div>
+        <h3 class="subhead reveal" id="more-projects">More projects</h3>
+        <div class="mini-grid">
+          <article class="mini reveal">
+            <div class="case-meta"><span class="tag tag-accent">Hackathon</span><span class="tag">2025</span></div>
+            <h4>HustleHub</h4>
+            <p>Built with Team WMan at the Adapt IT Hackathon 2025: a mobile platform that connects clients with skilled local workers, covering job posting, skill matching and worker profiles.</p>
+            <ul class="chips"><li>Flutter</li><li>Dart</li><li>Firebase Auth</li><li>Firestore</li></ul>
+            <div class="mini-links"><span class="muted">Repository is private. Code walkthrough available on request.</span></div>
+          </article>
+
+          <article class="mini reveal">
+            <div class="case-meta"><span class="tag tag-accent">Individual</span></div>
+            <h4>Task Manager</h4>
+            <p>Full-stack task app with REST route handlers over SQLite. Tasks are archived rather than deleted, and overdue status is computed at read time instead of stored. Automated tests use Node's built-in test runner.</p>
+            <ul class="chips"><li>Next.js</li><li>React</li><li>TypeScript</li><li>SQLite</li><li>node:test</li></ul>
+            <div class="mini-links"><a href="https://github.com/NkadimengKgothatso/-todo-application" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Source</a></div>
+          </article>
+
+          <article class="mini reveal">
+            <div class="case-meta"><span class="tag tag-accent">Academic · Team</span></div>
+            <h4>Dijo Tracker</h4>
+            <p>Restaurant order-tracking app for customers and staff: an Android client backed by a MySQL database hosted on the Wits LAMP server.</p>
+            <ul class="chips"><li>Java</li><li>Android</li><li>PHP</li><li>MySQL</li></ul>
+            <div class="mini-links"><span class="muted">Repository is private.</span></div>
+          </article>
+
+          <article class="mini reveal">
+            <div class="case-meta"><span class="tag tag-accent">Machine learning</span></div>
+            <h4>Naive Bayes Spam Classifier</h4>
+            <p>A spam classifier implemented from first principles with no ML libraries: bag-of-words features, Naive Bayes training, and Laplace smoothing for the zero-frequency problem.</p>
+            <ul class="chips"><li>Python</li><li>NumPy</li><li>pandas</li><li>Jupyter</li></ul>
+            <div class="mini-links"><a href="https://github.com/NkadimengKgothatso/Naive-Bayes-Spam-Classifier" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Source</a></div>
+          </article>
+
+          <article class="mini reveal">
+            <div class="case-meta"><span class="tag tag-accent">Independent</span></div>
+            <h4>Country Explorer</h4>
+            <p>Web app that fetches South Africa and its neighbouring countries from the REST Countries API and renders their capital, population, region and flag.</p>
+            <ul class="chips"><li>JavaScript</li><li>REST API</li><li>HTML</li><li>CSS</li></ul>
+            <div class="mini-links"><a href="https://github.com/NkadimengKgothatso/Country-Explorer-" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Source</a></div>
+          </article>
+
+          <article class="mini reveal">
+            <div class="case-meta"><span class="tag tag-accent">Algorithms</span></div>
+            <h4>Search &amp; puzzle solvers</h4>
+            <p>A Sudoku solver using depth-first search with recursive backtracking (C++), a Snake game agent using DFS, backtracking and Dijkstra's algorithm (Java), and a Turing machine simulator (C++).</p>
+            <ul class="chips"><li>C++</li><li>Java</li><li>DFS</li><li>Dijkstra</li></ul>
+            <div class="mini-links"><a href="https://github.com/NkadimengKgothatso/cpp-mini-projects-" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>C++ projects</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== EXPERIENCE -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience &amp; achievements</p>
+          <h2 class="section-title" id="experience-title">Where I've applied it</h2>
         </div>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>Java</span>
-            <span class="skill-percent">60%</span>
-            </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 60%"></div>
-            </div>
+        <ol class="timeline">
+          <li class="is-current reveal">
+            <article class="tl-card">
+              <div class="tl-head">
+                <h3>Vacation Student: Undergraduate</h3>
+                <span class="tl-date">2026 · Two placements</span>
+              </div>
+              <p class="tl-org">CSIR, Next-Generation Enterprises and Institutions</p>
+              <p>Invited back for a second vacation placement at the Council for Scientific and Industrial Research (CSIR).</p>
+              <ul class="bullets">
+                <li><strong>Second placement:</strong> 23 Nov – 11 Dec 2026 (current)</li>
+                <li><strong>First placement:</strong> June 2026</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="is-current reveal">
+            <article class="tl-card">
+              <div class="tl-head">
+                <h3>Chief Technology Officer</h3>
+                <span class="tl-date">2026 – Present</span>
+              </div>
+              <p class="tl-org">Beko Compliance · Private company</p>
+              <ul class="bullets">
+                <li>Lead technology for a South African legal-tech startup building a compliance platform for SMEs.</li>
+                <li>Designed and built the production system: Supabase Auth, PostgreSQL with row-level security, a rules-based compliance scoring engine and an installable PWA, deployed on Vercel.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="tl-card">
+              <div class="tl-head">
+                <h3>Software Development Project: Wits Quest</h3>
+                <span class="tl-date">2026</span>
+              </div>
+              <p class="tl-org">University of the Witwatersrand · COMS3011A · Team "Big-O" (6 members)</p>
+              <ul class="bullets">
+                <li>Built authentication in Sprint 1, then achievements, analytics and streaks in Sprint 3, merged through reviewed pull requests with tests in the same PR.</li>
+                <li>Co-owned project documentation and kept stand-up notes. Our process included formal tutor stakeholder reviews and rounds of user testing.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="tl-card">
+              <div class="tl-head">
+                <h3>Scrum Team Project: CareQueue</h3>
+                <span class="tl-date">2026</span>
+              </div>
+              <p class="tl-org">University of the Witwatersrand · Team of 8</p>
+              <ul class="bullets">
+                <li>Delivered the ML wait-time service and the patient dashboard over four sprints. I was the most active contributor by commit count.</li>
+                <li>Set up CI test automation and coverage reporting, and maintained sprint artefacts: backlogs, burndown charts and retrospectives.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="tl-card">
+              <div class="tl-head">
+                <h3>Adapt IT Hackathon 2025</h3>
+                <span class="tl-date">2025</span>
+              </div>
+              <p class="tl-org">Team WMan</p>
+              <p>Built HustleHub with my team, a Flutter and Firebase app connecting clients with skilled local workers, under hackathon time constraints.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================================================= EDUCATION -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section-title" id="education-title">The foundation underneath the projects</h2>
+          <p class="section-lead">What my coursework covers, and the code where I've applied it.</p>
         </div>
 
-        <div class="skill">
-            <div class="skill-title">
-            <span>PHP</span>
-            <span class="skill-percent">30%</span>
-            </div>
-            <div class="skill-bar">
-            <div class="skill-fill" style="--fill-width: 30%"></div>
-            </div>
+        <div class="edu-card reveal">
+          <div class="edu-crest" aria-hidden="true">Wits</div>
+          <div>
+            <h3>BSc Computer Science</h3>
+            <p>University of the Witwatersrand, Johannesburg</p>
+          </div>
+          <div class="edu-side">
+            <span class="tl-date">2024 – Present</span>
+            <span>Third year</span>
+          </div>
         </div>
 
+        <div class="foundations">
+          <article class="foundation reveal">
+            <h4>Operating Systems &amp; Systems Programming</h4>
+            <p>Processes, scheduling and memory in C: process creation with <code>fork()</code> and pipes, FIFO, Round-Robin and Stride schedulers, and single- and multi-level page-table address translation.</p>
+            <a class="proof-link" href="https://github.com/NkadimengKgothatso/Operating_System" target="_blank" rel="noopener">View lab code <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="foundation reveal">
+            <h4>Software Development &amp; Design</h4>
+            <p>Building, testing and maintaining software in teams: Scrum, UML and 4+1 architecture views, unit testing with Jest and Vitest, CI pipelines and code review.</p>
+            <a class="proof-link" href="#p-witsquest">See Wits Quest &amp; CareQueue <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="foundation reveal">
+            <h4>Machine Learning &amp; AI</h4>
+            <p>Probabilistic models built from first principles, plus supervised regression in scikit-learn with feature engineering, cross-validation and deployment behind an API.</p>
+            <a class="proof-link" href="#p-carequeue">See the wait-time model <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="foundation reveal">
+            <h4>Data Structures &amp; Algorithms</h4>
+            <p>Search and graph algorithms (DFS, backtracking, Dijkstra), complexity-aware design, and efficient query structures such as binary-search range queries over sparse arrays.</p>
+            <a class="proof-link" href="#p-rat">See RAT's query engine <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="foundation reveal">
+            <h4>Database Systems</h4>
+            <p>Relational schema design, SQL, and access control enforced in the database through row-level security, alongside NoSQL document stores.</p>
+            <a class="proof-link" href="#p-beko">See Beko's schema <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="foundation reveal">
+            <h4>Computer Graphics &amp; Visualisation</h4>
+            <p>GPU programming with WebGL and GLSL shaders, transformations, lighting and shading, applied in a playable team-built 3D game.</p>
+            <a class="proof-link" href="#p-silenthorn">See The Silent Horn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
         </div>
 
-                    
+        <p class="school reveal">Before Wits: National Senior Certificate (2023), 81.57% average, focused on Mathematics and Physical Sciences.</p>
+      </div>
+    </section>
 
-                </section>
-            
-        </section>
-
-
-
-    
-    </main>
-
-</section>
-
-
-
-
-<!-- Services Section -->
-<section id="Services" class="services">
-    <div class="services-container">
-        <h2>💼 Services</h2>
-
-        <!-- Service Card 1 -->
-        <div class="service-card">
-            <h3>🌐 Web Development</h3>
-            <p>Building responsive, modern websites . Focus on user experience, performance, and clean design.</p>
+    <!-- ========================================================= CONTACT -->
+    <section class="section section-dark" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title" id="contact-title">Let's talk</h2>
+          <p class="section-lead">I'm open to internships, graduate programmes, vacation work and junior roles in software engineering and AI/ML. Email is the fastest way to reach me.</p>
+          <p class="contact-email">
+            <a href="mailto:Kgothatsonkadimeng15@gmail.com">Kgothatsonkadimeng15@gmail.com</a>
+            <button class="btn btn-secondary btn-sm copy-btn" type="button" data-copy-email hidden><span>Copy</span></button>
+          </p>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/kgothatso-nkadimeng-2b3568350/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn<span>kgothatso-nkadimeng</span></a></li>
+            <li><a href="https://github.com/NkadimengKgothatso" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub<span>NkadimengKgothatso</span></a></li>
+            <li><a href="cv.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Resume<span>PDF</span></a></li>
+          </ul>
         </div>
 
-        <!-- Service Card 2 -->
-        <div class="service-card">
-            <h3>🎨 Front-End Development</h3>
-            <p>Creating interactive and visually appealing user interfaces , and UI/UX principles.</p>
-        </div>
+        <form class="panel form reveal" id="contact-form" action="mailto:Kgothatsonkadimeng15@gmail.com" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Send message</button>
+          <p class="form-note">This opens your email app with the message filled in.</p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <!-- Service Card 3 -->
-        <div class="service-card">
-            <h3>📊 Analysis</h3>
-            <p>Collecting and interpreting data to provide actionable insights for better decision-making and strategy planning.</p>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="service-card">
-            <h3>💼 Business Consulting</h3>
-            <p>Helping businesses optimize processes, improve efficiency, and implement modern technology solutions.</p>
-        </div>
-
-        <!-- Service Card 5 -->
-        <div class="service-card">
-            <h3>📢 Marketing</h3>
-            <p>Designing strategies to increase brand visibility, reach target audiences, and enhance online presence.</p>
-        </div>
-
-        <!-- Service Card 6 -->
-        <div class="service-card">
-            <h3>⚡ Backend Development</h3>
-            <p>Developing server-side applications, APIs, and database management systems for scalable and secure web solutions.</p>
-        </div>
-
-        <!-- Service Card 7 -->
-        <div class="service-card">
-            <h3>👨‍🏫 Mentorship & Coaching</h3>
-            <p>Providing guidance, knowledge, and support for personal growth and career development in tech and business.</p>
-        </div>
-
-        <!-- Service Card 8 -->
-        <div class="service-card">
-            <h3>🎨 Graphic Design</h3>
-            <p>Creating logos, visuals, and digital assets that convey your brand identity with style and clarity.</p>
-        </div>
-        <!-- Service Card 9: Machine Learning -->
-    <div class="service-card">
-        <h3>🤖 Machine Learning</h3>
-        <p>Designing intelligent systems and predictive models using Python, TensorFlow, and data analysis techniques to solve real-world problems.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Kgothatso Nkadimeng</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="https://github.com/NkadimengKgothatso" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/kgothatso-nkadimeng-2b3568350/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </nav>
     </div>
-
-    </div>
-</section>
-
-
-
-
-
-<!-- Projects section -->
-<section id="Projects" class="projects">
-    <div class="projects-container">
-        <h2>My Projects</h2>
-
-        <!-- Project Card 1 -->
-        <div class="project-card">
-            <h3>🌍 Country Explorer</h3>
-            <p><strong>Project Description:</strong> A web app to explore Country and neighbouring countries, displaying country details such as name, capital, population, region, and national flag.</p>
-            <p><strong>Features:</strong> Search functionality, clean layout, dynamic updates, user-friendly interface.</p>
-            <p><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript</p>
-            <a href="https://nkadimengkgothatso.github.io/Country-Explorer-/" target="_blank" class="project-link">🌐 Live Website</a>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="project-card">
-            <h3>🚀 HustleHub</h3>
-            <p><strong>Overview:</strong> A platform connecting clients with skilled workers, built during Adapt IT Hackathon 2025 to empower local communities.</p>
-            <p><strong>Features:</strong> Job posting & management, skill matching, real-time updates, profile management, secure messaging.</p>
-            <p><strong>Tech Stack:</strong> Frontend: Flutter (Dart), Backend: Firebase (Auth, Firestore, Storage)</p>
-            <a href="https://github.com/Adapt-IT-hackathon/Adapt_It-HustleHub" target="_blank" class="project-link">💻 GitHub Repository</a>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="project-card">
-            <h3>🚀 Dijo Tracker</h3>
-            <p><strong>Overview:</strong> Restaurant management app for monitoring order traffic, enhancing customer & staff workflow, and real-time order tracking.</p>
-            <p><strong>Features:</strong> Order tracking, dashboards for customers & staff, real-time updates, traffic monitoring, user authentication.</p>
-            <p><strong>Tech Stack:</strong> Android Studio (Java), MySQL, API integration</p>
-            <a href="https://github.com/YBCoder101/Dijo.Trackers" target="_blank" class="project-link">💻 GitHub Repository</a>
-        </div>
-        <!-- Project Card 4: Author / Purpose -->
-<div class="project-card">
-    <h3>👨‍💻 About the Author</h3>
-    <p><strong>Kgothatso</strong> – "Follow along as I learn, stumble, and grow through coding."</p>
-
-    <h4>🎯 Purpose</h4>
-    <ul>
-        <li>Document daily coding progress</li>
-        <li>Practice HTML structure and semantic layout</li>
-        <li>Improve CSS styling and design skills</li>
-        <li>Showcase practical learning results</li>
-        <li>Track personal growth in web development</li>
-    </ul>
-
-    <h4>❤️ Message</h4>
-    <p>This website represents my first steps into web development. Each update shows progress, learning, and growth as I continue improving my skills.</p>
-
-    <p> 
-        <a href="https://nkadimengkgothatso.github.io/mywebsite/" target="_blank" class="project-link">🌐 Visit the live site
-        </a>
-    </p>
-</div>
-    </div>
-</section>
-
-
-
-
-
-<!-- the contact me section -->
- <section id="Contact" class="contact">
-
-    <div class="contact-container">
-        <h2>Contact Me</h2>
-        <p class="contact-text">
-            Feel free to reach out for collaborations, opportunities, or just to connect 👋
-        </p>
-
-        <div class="contact-links">
-
-
-            <!--  Phone -->
-           <a href="tel:+27793950364" class="contact-card">
-                📞 Call Me  tel:+27793950364
-            </a>
-            <!-- WhatsApp / -->
-            <a href="https://wa.me/+27793950364" target="_blank" class="contact-card">
-                📱 WhatsApp 
-            </a>
-
-            <!-- GitHub -->
-            <a href="https://github.com/NkadimengKgothatso" target="_blank" class="contact-card">
-                💻 GitHub
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/kgothatso-nkadimeng-2b3568350/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B4XGC1FX0RR2%2Bw45%2F4gk7iQ%3D%3D" target="_blank" class="contact-card">
-                🔗 LinkedIn
-            </a>
-
-            <!-- Email -->
-            <a href="mailto:kgkgthathelegend@gmail.com" class="contact-card">
-                📧 Email
-            </a>
-
-            <!-- CV -->
-            <a href="cv.pdf" download class="contact-card cv">
-                📄 Download CV
-            </a>
-
-        </div>
-    </div>
-
-</section>
-
-
-<footer>
-    <p>© 2026 Kgothatso Nkadimeng Portfolio</p>
-</footer>
-
+  </footer>
 </body>
 </html>

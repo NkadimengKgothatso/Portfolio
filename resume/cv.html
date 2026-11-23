@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kgothatso Nkadimeng — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Inter", "Liberation Sans", Arial, sans-serif; font-size: 9.4pt; line-height: 1.42; color: #1f1712; }
+  a { color: inherit; text-decoration: none; }
+  h1 { font-size: 21pt; letter-spacing: -0.02em; margin: 0; line-height: 1.1; }
+  .title { font-size: 10.5pt; font-weight: 600; color: #a4472c; margin: 3pt 0 5pt; }
+  .contact { font-size: 8.8pt; color: #5e5048; }
+  .contact span + span::before { content: "·"; margin: 0 6pt; color: #b8a99a; }
+  h2 { font-size: 9pt; text-transform: uppercase; letter-spacing: 0.09em; color: #a4472c; margin: 11pt 0 5pt; padding-bottom: 2.5pt; border-bottom: 1px solid #e0d4c5; }
+  p { margin: 0 0 4pt; }
+  .entry { margin-bottom: 7pt; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; gap: 10pt; align-items: baseline; }
+  .row strong { font-size: 9.8pt; }
+  .meta { color: #5e5048; font-size: 8.8pt; white-space: nowrap; }
+  .sub { color: #5e5048; font-size: 8.9pt; margin: 0.5pt 0 2pt; }
+  .stack { color: #5e5048; font-size: 8.5pt; font-style: italic; margin-top: 1.5pt; }
+  ul { margin: 2pt 0 0; padding-left: 12pt; }
+  li { margin-bottom: 1.5pt; }
+  li::marker { color: #a4472c; }
+  .skills { display: grid; grid-template-columns: 118pt 1fr; gap: 2.5pt 10pt; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Kgothatso Nkadimeng</h1>
+    <p class="title">Computer Science Student · Software Engineering · AI &amp; Machine Learning</p>
+    <p class="contact">
+      <span><a href="mailto:Kgothatsonkadimeng15@gmail.com">Kgothatsonkadimeng15@gmail.com</a></span><span>+27 79 395 0364</span><span>Johannesburg, South Africa</span><br>
+      <span><a href="https://www.linkedin.com/in/kgothatso-nkadimeng-2b3568350/">linkedin.com/in/kgothatso-nkadimeng-2b3568350</a></span><span><a href="https://github.com/NkadimengKgothatso">github.com/NkadimengKgothatso</a></span>
+    </p>
+  </header>
+
+  <h2>Profile</h2>
+  <p>Third-year Computer Science student at the University of the Witwatersrand who builds full-stack applications and puts machine learning to work inside them. I have shipped a clinic queue platform with a wait-time prediction API, lead technology as CTO of a legal-tech startup, built a 3D browser game, and delivered features in Scrum teams of six and eight through reviewed pull requests and CI-gated tests. Seeking software engineering, AI/ML and graduate developer opportunities.</p>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row"><strong>BSc Computer Science, University of the Witwatersrand</strong><span class="meta">2024 – Present</span></div>
+    <p class="sub">Currently in third year</p>
+    <ul>
+      <li>Coursework: Data Structures &amp; Algorithms, Operating Systems &amp; Systems Programming, Database Systems, Software Design, Software Development Project (COMS3011A), Machine Learning, Computer Graphics &amp; Visualisation, Object-Oriented Programming.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>National Senior Certificate</strong><span class="meta">2023</span></div>
+    <p class="sub">Overall average 81.57% · Mathematics &amp; Physical Sciences</p>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="row"><strong>Chief Technology Officer, Beko Compliance</strong><span class="meta">2026 – Present</span></div>
+    <p class="sub">Private legal-tech company · bekocompliance.co.za</p>
+    <ul>
+      <li>Lead technology and built the production compliance platform that helps South African SMEs track SARS, CIPC and other regulatory obligations.</li>
+      <li>Designed a 12-table PostgreSQL schema with row-level security, and implemented email/password auth, email verification codes, Google sign-in and password reset on Supabase.</li>
+      <li>Migrated the backend from Firebase/Firestore to Supabase/PostgreSQL with idempotent SQL migrations, and built a rules-based engine that generates each business's obligations and a 0–100 compliance score.</li>
+    </ul>
+    <p class="stack">JavaScript (ES modules), Supabase Auth/Storage, PostgreSQL, SQL, PWA, Vercel</p>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>Vacation Student: Undergraduate, CSIR</strong><span class="meta">2026 · Two placements</span></div>
+    <p class="sub">Next-Generation Enterprises and Institutions, Council for Scientific and Industrial Research</p>
+    <ul>
+      <li>Invited back for a second vacation placement: 23 Nov – 11 Dec 2026 (current), after a first placement in June 2026.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>Adapt IT Hackathon 2025, Team WMan</strong><span class="meta">2025</span></div>
+    <ul>
+      <li>Built HustleHub with my team, a Flutter and Firebase mobile platform that connects clients with skilled local workers through job posting, skill matching and worker profiles.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="entry">
+    <div class="row"><strong>CareQueue: Clinic Queue &amp; Wait-Time Prediction Platform</strong><span class="meta">Team of 8 · 2026</span></div>
+    <p class="sub">care-queue-delta.vercel.app · github.com/NkadimengKgothatso/SD-CareQueue</p>
+    <ul>
+      <li>Built the wait-time prediction pipeline end to end: Firestore export, cleaning and outlier removal, feature engineering, model training and a Flask <i>/predict</i> API deployed on Render.</li>
+      <li>Replaced the initial Random Forest with a Gradient Boosting Regressor on engineered features, evaluated with 5-fold cross-validation and mean absolute error.</li>
+      <li>Built the patient dashboard (live queue position and estimated wait) with a rule-based fallback when the prediction service is unavailable.</li>
+      <li>Set up GitHub Actions testing with Codecov coverage reporting and maintained Scrum and architecture documentation. Most active contributor by commit count.</li>
+    </ul>
+    <p class="stack">JavaScript, Firebase Auth (incl. Google sign-in), Firestore, PWA, Python, Flask, scikit-learn, pandas, Jest, GitHub Actions</p>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>Wits Quest: Location-Gated Campus Game</strong><span class="meta">Team of 6 · COMS3011A · 2026</span></div>
+    <p class="sub">wits-quest.vercel.app · nkadimengkgothatso.github.io/-wits-quest</p>
+    <ul>
+      <li>Built authentication (login/registration UI, React auth context, server-side credential checks).</li>
+      <li>Owned achievements (admin-defined rules checked server-side after every answer and match), analytics (per-question pass rates feeding a "needs repair" flag) and daily streaks.</li>
+      <li>Co-led documentation: API reference, database, testing and methodology. Built and deployed the MkDocs site. Worked to a CI coverage gate of 80%.</li>
+    </ul>
+    <p class="stack">TypeScript, React, Vite, Node.js, Express, Supabase, PostgreSQL, Vitest</p>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>The Silent Horn: 3D Browser Game</strong><span class="meta">Team · COMS3006A · 2026</span></div>
+    <p class="sub">wmc.ms.wits.ac.za/students/sgroup3889 · Trailer: youtu.be/DdFIj7nvtBM · github.com/motshekhene/cgv-project</p>
+    <ul>
+      <li>Owned Level 2 (a car chase): vehicle controller with collisions, traffic, and a pursuer AI built as a finite-state machine with telegraphed attack moves (rams, PIT manoeuvres, tyre shots, drones).</li>
+      <li>Wrote a car-paint shader using Three.js <i>onBeforeCompile</i> that masks texels in HSV space to repaint only the body. Synthesised engine sound with the Web Audio API.</li>
+    </ul>
+    <p class="stack">JavaScript, Three.js, GLSL, WebGL, Vite, Web Audio</p>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>RAT: Repo Analysis Tool</strong><span class="meta">Individual · 2026</span></div>
+    <p class="sub">github.com/NkadimengKgothatso/Software-Design-Project-Test-</p>
+    <ul>
+      <li>Git analytics dashboard computing churn, growth and ownership metrics from one streaming <i>git log</i> pass. Matched reference metrics exactly on git.git and served queries in about 300 ms on php-src (118,756 commits).</li>
+    </ul>
+    <p class="stack">Node.js, Express, JavaScript, ECharts</p>
+  </div>
+  <div class="entry">
+    <div class="row"><strong>Other work</strong></div>
+    <ul>
+      <li><b>Operating Systems labs (C):</b> fork() and pipes, FIFO/Round-Robin/Stride schedulers, single- and multi-level paging.</li>
+      <li><b>Naive Bayes spam classifier</b> from scratch (NumPy, pandas) · <b>Task Manager</b> (Next.js, TypeScript, SQLite) · <b>Dijo Tracker</b> (Android/Java, PHP, MySQL on Wits LAMP) · <b>Sudoku solver</b> (C++, DFS/backtracking) · <b>Snake AI</b> (Java, Dijkstra).</li>
+    </ul>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Python, JavaScript, TypeScript, Java, C, C++, SQL; also Dart, PHP, MATLAB, HTML/CSS</dd>
+    <dt>Backend &amp; APIs</dt><dd>Node.js, Express, Flask, REST API design, Next.js route handlers, authentication &amp; OAuth</dd>
+    <dt>Data &amp; Cloud</dt><dd>PostgreSQL, Supabase, row-level security, Firebase Auth, Firestore, SQLite, MySQL, Vercel, Render</dd>
+    <dt>ML &amp; Data</dt><dd>scikit-learn, pandas, NumPy, Gradient Boosting, Random Forest, Naive Bayes, feature engineering, cross-validation</dd>
+    <dt>Frontend &amp; Graphics</dt><dd>React, Next.js, Tailwind CSS, Progressive Web Apps, Three.js, GLSL, Flutter, Android (Java)</dd>
+    <dt>Practice &amp; Tools</dt><dd>Git &amp; PR reviews, Jest, Vitest, GitHub Actions, Codecov, Scrum, UML, Linux</dd>
+  </dl>
+
+  <h2>Languages</h2>
+  <p>English, Sepedi (fluent) · isiZulu, isiXhosa, Sesotho, Setswana (conversational)</p>
+</body>
+</html>
