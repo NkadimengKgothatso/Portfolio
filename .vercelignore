@@ -1,0 +1,4 @@
+# Repo-only files that shouldn't be served on the live site
+README.md
+report.md
+student-info.txt
